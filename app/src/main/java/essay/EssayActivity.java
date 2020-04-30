@@ -26,6 +26,7 @@ import android.widget.Toast;
 
 import java.util.Calendar;
 import java.util.Locale;
+import java.util.Objects;
 
 import databasehelper.TestAdapter;
 import databasehelper.TestAdapterEs;
@@ -38,6 +39,7 @@ import other.Utils;
 
 public class EssayActivity extends AppCompatActivity {
 
+    static TextToSpeech myTTS;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,6 +50,14 @@ public class EssayActivity extends AppCompatActivity {
         int id=0;
         if(b != null) id=b.getInt("id");
 
+        myTTS = new TextToSpeech(this, new TextToSpeech.OnInitListener() {
+            @Override
+            public void onInit(int i) {
+                if(i != TextToSpeech.ERROR) {
+                    myTTS.setLanguage(Locale.US);
+                }
+            }
+        });
         //Toast.makeText(this,word+word.length(),Toast.LENGTH_LONG).show();
 
         TestAdapterEs mDbHelper = new TestAdapterEs(this);
@@ -98,7 +108,7 @@ public class EssayActivity extends AppCompatActivity {
                             int width = (int)(getResources().getDisplayMetrics().widthPixels*0.90);
                             int height = (int)(getResources().getDisplayMetrics().heightPixels*0.90);
 
-                            md.getWindow().setLayout(width, height);
+                            Objects.requireNonNull(md.getWindow()).setLayout(width, height);
 
                             final EditText persianEditText=md.findViewById(R.id.persian);
                             final TextView englishTextView=md.findViewById(R.id.english);
@@ -123,17 +133,6 @@ public class EssayActivity extends AppCompatActivity {
                                 }
                             });
 
-                            final TextToSpeech myTTS;
-
-                                myTTS = new TextToSpeech(EssayActivity.this, new TextToSpeech.OnInitListener() {
-                                            @Override
-                                            public void onInit(int i) {
-                                                if(i != TextToSpeech.ERROR) {
-                                                    //myTTS.setLanguage(Locale.US);
-                                                }
-                                            }
-                                        });
-                                myTTS.setLanguage(Locale.US);
                                 Button playSound=md.findViewById(R.id.playbutton);
                                 playSound.setOnClickListener(new View.OnClickListener() {
                                     @Override
@@ -199,7 +198,7 @@ public class EssayActivity extends AppCompatActivity {
                             int width = (int)(getResources().getDisplayMetrics().widthPixels*0.90);
                             int height = (int)(getResources().getDisplayMetrics().heightPixels*0.90);
 
-                            md.getWindow().setLayout(width, height);
+                            Objects.requireNonNull(md.getWindow()).setLayout(width, height);
 
                             final EditText persianEditText=md.findViewById(R.id.persian);
                             final TextView englishTextView=md.findViewById(R.id.english);
@@ -225,17 +224,7 @@ public class EssayActivity extends AppCompatActivity {
                                 }
                             });
 
-                            final TextToSpeech myTTS;
 
-                                myTTS = new TextToSpeech(EssayActivity.this, new TextToSpeech.OnInitListener() {
-                                    @Override
-                                    public void onInit(int i) {
-                                        if(i != TextToSpeech.ERROR) {
-                                            //myTTS.setLanguage(Locale.US);
-                                        }
-                                    }
-                                });
-                                myTTS.setLanguage(Locale.US);
                                 Button playSound=md.findViewById(R.id.playbutton);
                                 playSound.setOnClickListener(new View.OnClickListener() {
                                     @Override
@@ -301,7 +290,7 @@ public class EssayActivity extends AppCompatActivity {
                     int width = (int)(getResources().getDisplayMetrics().widthPixels*0.90);
                     int height = (int)(getResources().getDisplayMetrics().heightPixels*0.90);
 
-                    md.getWindow().setLayout(width, height);
+                    Objects.requireNonNull(md.getWindow()).setLayout(width, height);
 
                     final EditText persianEditText=md.findViewById(R.id.persian);
                     final TextView englishTextView=md.findViewById(R.id.english);
@@ -326,17 +315,6 @@ public class EssayActivity extends AppCompatActivity {
                             md.dismiss();
                         }
                     });
-                    final TextToSpeech myTTS;
-
-                        myTTS = new TextToSpeech(EssayActivity.this, new TextToSpeech.OnInitListener() {
-                            @Override
-                            public void onInit(int i) {
-                                if(i != TextToSpeech.ERROR) {
-                                    //myTTS.setLanguage(Locale.US);
-                                }
-                            }
-                        });
-                        myTTS.setLanguage(Locale.US);
                         Button playSound=md.findViewById(R.id.playbutton);
                         playSound.setOnClickListener(new View.OnClickListener() {
                             @Override
