@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">آیلتس</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="interstitial_ad_sample">Interstitial Ad Sample</string>
+    <string name="start_level">Level 1</string>
+    <string name="next_level">Next Level</string>
+    <!-- -
+        This is an ad unit ID for an interstitial test ad. Replace with your own interstitial ad unit id.
+        For more information, see https://support.google.com/admob/answer/3052638
+    <!- -->
+    <string name="interstitial_ad_unit_id"></string>
+    <string name="interstitial_ad_unit_id2">ca-app-pub-3940256099942544/1033173712</string>
+
+
+    <string name="answer">پاسخ</string>
+    <string name="question">پرسش</string>
+    <string name="ok">OK</string>
+    <string name="addtoleitner">افزودن به جعبه</string>
+    <string name="title_activity_word2">Word Full Specification</string>
+    <string name="title_activity_idiom">Word Full Specification</string>
+    <string name="title_activity_essay_band">Essay Band List</string>
+    <string name="band_6">Band 6</string>
+    <string name="band_7">Band 7</string>
+    <string name="band_8">Band 8</string>
+    <string name="title_activity_essay">Essay</string>
+    <string name="title_activity_essay_list">Essay list</string>
+    <string name="dictionary">دیکشنری</string>
+    <string name="simple">Simple</string>
+    <string name="past">Past</string>
+    <string name="past_participle">Past participle</string>
+    <string name="leitner">لایتنر</string>
+    <string name="ielts_words">لغات آیلتس</string>
+    <string name="irregular_verbs">افعال بی قاعده</string>
+    <string name="idioms">اصطلاحات</string>
+    <string name="essays">مقالات</string>
+    <string name="action_update">بروزرسانی</string>
+    <string name="action_share">ارسال به دیگران</string>
+    <string name="action_backup">پشتیبان گیری</string>
+    <string name="action_restore">بازیابی</string>
+    <string name="phrasal">افعال عبارتی</string>
+</resources>

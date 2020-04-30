@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:weightSum="13"
+    android:layout_height="match_parent">
+    <EditText
+        android:inputType="textMultiLine"
+        android:id="@+id/english"
+        android:gravity="center"
+        android:layout_height="0dp"
+        android:hint="@string/question"
+        android:layout_weight="6"
+        android:layout_width="match_parent"
+        android:scrollbars="vertical"
+        />
+    <EditText
+        android:inputType="textMultiLine"
+        android:id="@+id/persian"
+        android:gravity="center"
+        android:hint="@string/answer"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:layout_width="match_parent"
+        android:scrollbars="vertical">
+        <requestFocus />
+
+    </EditText>
+    <Button
+        android:layout_width="match_parent"
+        android:id="@+id/okbutton"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="@string/ok"/>
+
+</LinearLayout>

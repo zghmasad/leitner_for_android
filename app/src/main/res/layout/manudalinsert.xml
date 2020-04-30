@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:weightSum="9"
+        android:layout_height="150dp">
+        <EditText
+            android:id="@+id/persian"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:hint="فارسی" />
+        <EditText
+            android:id="@+id/english"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:hint="انگلیسی"
+            tools:layout_editor_absoluteX="119dp"
+            tools:layout_editor_absoluteY="34dp" />
+        <EditText
+            android:id="@+id/box"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:hint="Box"
+            tools:layout_editor_absoluteX="204dp"
+            tools:layout_editor_absoluteY="34dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:weightSum="9"
+        android:layout_height="150dp">
+    <EditText
+        android:id="@+id/year"
+        android:layout_width="0dp"
+        android:layout_weight="3"
+        android:layout_height="wrap_content"
+        android:hint="سال"/>
+    <EditText
+        android:id="@+id/mon"
+        android:layout_width="0dp"
+        android:layout_weight="3"
+        android:layout_height="wrap_content"
+        android:hint="ماه"/>
+    <EditText
+        android:id="@+id/day"
+        android:layout_width="0dp"
+        android:layout_weight="3"
+        android:layout_height="wrap_content"
+        android:hint="روز"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:weightSum="9"
+        android:layout_height="150dp">
+    <Button
+        android:id="@+id/button"
+        android:layout_width="0dp"
+        android:layout_weight="3"
+        android:layout_height="wrap_content"
+        android:text="افزودن"/>
+    </LinearLayout>
+</LinearLayout>

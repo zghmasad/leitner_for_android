@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="leitner.LeitnerActivity">
+<LinearLayout
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:weightSum="60"
+    android:id="@+id/mainlayout"
+    android:layout_height="match_parent">
+    <LinearLayout
+            android:id="@+id/box1"
+        android:background="@color/dangerColor"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/box1_title"
+                android:text="جعبه شماره 1"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:weightSum="10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="5"
+                    android:gravity="center"
+                    android:id="@+id/box1_ready"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="5"
+                    android:gravity="left"
+                    android:id="@+id/readyTitle1"
+                    android:text="تعداد فیش های آماده:"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:weightSum="10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="5"
+                    android:gravity="center"
+                    android:id="@+id/box1_notready"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="5"
+                    android:gravity="left"
+                    android:id="@+id/neadyTitle1"
+                    android:text="تعداد فیش های منتظر:"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/box2"
+        android:background="@color/warningColor"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/box2_title"
+            android:text="جعبه شماره 2"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:weightSum="10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:id="@+id/box2_ready"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:gravity="left"
+                android:id="@+id/readyTitle2"
+                android:text="تعداد فیش های آماده:"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:weightSum="10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:id="@+id/box2_notready"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:gravity="left"
+                android:id="@+id/neadyTitle2"
+                android:text="تعداد فیش های منتظر:"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/box3"
+        android:background="@color/successColor"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/box3_title"
+            android:text="جعبه شماره 3"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:weightSum="10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:id="@+id/box3_ready"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:gravity="left"
+                android:id="@+id/readyTitle3"
+                android:text="تعداد فیش های آماده:"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:weightSum="10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:id="@+id/box3_notready"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:gravity="left"
+                android:id="@+id/neadyTitle3"
+                android:text="تعداد فیش های منتظر:"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/box4"
+        android:background="@color/defaultColor"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/box4_title"
+            android:text="جعبه شماره 4"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:weightSum="10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:id="@+id/box4_ready"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:gravity="left"
+                android:id="@+id/readyTitle4"
+                android:text="تعداد فیش های آماده:"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:weightSum="10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:id="@+id/box4_notready"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:gravity="left"
+                android:id="@+id/neadyTitle4"
+                android:text="تعداد فیش های منتظر:"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/box5"
+        android:background="@color/primaryColor"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/box5_title"
+            android:text="جعبه شماره 5"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:weightSum="10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:id="@+id/box5_ready"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:gravity="left"
+                android:id="@+id/readyTitle5"
+                android:text="تعداد فیش های آماده:"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:weightSum="10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:id="@+id/box5_notready"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:gravity="left"
+                android:id="@+id/neadyTitle5"
+                android:text="تعداد فیش های منتظر:"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/box6"
+        android:background="@color/secondaryColor"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/box6_title"
+            android:text="فیش های فراگرفته"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:weightSum="10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:id="@+id/box6_ready"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:gravity="left"
+                android:id="@+id/readyTitle6"
+                android:text="تعداد فیش های فراگرفته:"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|start"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@drawable/ic_add" />
+</android.support.design.widget.CoordinatorLayout>

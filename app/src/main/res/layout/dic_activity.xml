@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="10"
+    android:layout_margin="6dp"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="12"
+        android:layout_width="match_parent">
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="10"
+            android:id="@+id/et"
+            android:layout_height="match_parent"
+            android:hint="فارسی/انگلیسی تایپ کنید"
+            android:inputType="text" />
+        <ImageView
+            android:src="@drawable/ic_play_black"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/buttonTTS"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:src="@drawable/ic_close"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/buttonClean"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_weight="9"
+        android:id="@+id/linear_layout"
+        android:orientation="vertical"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F729B</color>
+    <color name="colorPrimaryDark">#1C2331</color>
+    <color name="colorAccent">#2BBBAD</color>
+
+    <color name="dangerColor">#CC0000</color>
+    <color name="warningColor">#FF8800</color>
+    <color name="successColor">#007E33</color>
+    <color name="successColorLight">#00C851</color>
+    <color name="defaultColorLight">#2BBBAD</color>
+    <color name="primaryColor">#0d47a1</color>
+    <color name="defaultColor">#00695c</color>
+    <color name="secondaryColor">#9933CC</color>
+
+    <color name="grayColor">#dddddd</color>
+    <color name="blackColor">#000000</color>
+    <color name="whiteColor">#ffffff</color>
+
+    <color name="uniqueColor">#1C2331</color>
+    <color name="uniqueColorLight">#3F729B</color>
+</resources>

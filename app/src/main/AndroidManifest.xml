@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="yobinet.ir.ielts">
+
+    <!-- Include required permissions for Google Mobile Ads to run. -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- Include the AdActivity configChanges and theme. -->
+        <activity android:name="dictionary.DictionaryActivity" />
+        <activity android:name="ieltsword.IeltsAlphabetList" />
+        <activity android:name="ieltsword.IeltsWords"
+            android:windowSoftInputMode="adjustPan"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity android:name="phrasal.IeltsVerbs"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name="phrasal.PhrasalActivity"
+            android:label="@string/title_activity_word2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="phrasal.VerbsAlphabetList" />
+        <activity android:name="idioms.Idioms"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="idioms.IdiomAlphabetList" />
+        <activity android:name="leitner.Box6" />
+        <activity android:name="leitner.ManualInsert" />
+        <activity android:name="leitner.Box1back" />
+        <activity
+            android:name="leitner.LeitnerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="leitner.LeitnerTab"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name="ieltsword.WordActivity2"
+            android:label="@string/title_activity_word2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="irregular.IrregularVerbsAcrivity" />
+        <activity
+            android:name="idioms.IdiomActivity"
+            android:label="@string/title_activity_idiom"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="essay.EssayActivity"
+            android:label="@string/title_activity_essay"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="essay.EssayBand"
+            android:label="@string/title_activity_essay_band"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="essay.EssayAlphabetList"
+            android:label="@string/title_activity_essay_list"
+            android:theme="@style/AppTheme" />
+
+    </application>
+
+</manifest>
